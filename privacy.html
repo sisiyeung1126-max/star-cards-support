@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Star Cards 私隱政策 · Privacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker"><a href="index.html">Star Cards</a> · app.yuebun.sikzi</p>
+      <h1>私隱政策 · 隐私政策 · Privacy</h1>
+      <p>生效日期 · 生效日期 · Effective date: 2026-09-24</p>
+      <nav class="lang" aria-label="Languages">
+        <a href="#zh-Hant">繁體中文</a>
+        <a href="#zh-Hans">简体中文</a>
+        <a href="#en">English</a>
+        <a href="support.html">支援 · 支持 · Support</a>
+      </nav>
+    </header>
+
+    <article id="zh-Hant" lang="zh-Hant">
+      <h2>繁體中文</h2>
+      <p>Star Cards（繁星字卡）是給小朋友用的親子認字 App，對象大約 2.5 至 6 歲。App 裡家長可選的年齡是 3–4 歲、4–5 歲或 5–6 歲。沒有兒童帳號。套件識別碼是 <code>app.yuebun.sikzi</code>。</p>
+      <p>這份政策只描述這個版本的程式實際做的事。我們不從這款 App 收集個人資料。</p>
+
+      <h3>我們收集什麼</h3>
+      <p>進度、設定和語音都不會傳到我們。我們沒有帳號系統，也沒有自己的 App 伺服器或付款伺服器。</p>
+      <p>隨 App 附上的私隱清單（PrivacyInfo.xcprivacy）寫明：不追蹤、追蹤網域是空的、收集的資料類型是空的。唯一申報的必要原因 API 是 UserDefaults（原因 CA92.1），用來把 App 自己的設定存在這部裝置。</p>
+      <p>程式裡沒有廣告 SDK、沒有第三方分析或崩潰回報、沒有廣告識別碼（IDFA），也不會要求追蹤許可。這個版本不會從 App 裡打開網站。</p>
+
+      <h3>只存在這部裝置的資料</h3>
+      <p>資料只寫入這部 iPhone 的 UserDefaults。App 不會把進度寫成要上傳的檔案。程式只會讀取已經包在 App 裡的圖片和聲音，用來顯示和播放。</p>
+      <p>設定與學習進度（鍵名 <code>yuebun-sikzi-state-v2</code>）包括：是否完成第一次設定、年齡段、畫面文字（繁體、簡體或英文）、朗讀語音、每次大約玩幾張、是否只看圖不朗讀、看過哪些字、未完成的一局、今日星星和重玩紀錄、ABC 與數字進度、家長選擇的意向和所在地區，以及這部裝置上 Pro 是否已開的本地標記。購買是否仍然有效，以這部裝置上的 Apple StoreKit 為準，不是以那個本地標記為準。</p>
+      <p>樂園進度（鍵名 <code>yuebun.playland.progress</code>）包括：貼紙數目、音樂開關，以及已收集的貼紙卡。</p>
+      <p>App 不會詢問兒童的姓名、電郵或電話。Info.plist 沒有相機、麥克風、相片或定位的用途說明，因為 App 不使用這些功能。聲音只用於播放（音訊工作階段是 playback），不是錄音。</p>
+
+      <h3>語音</h3>
+      <p>朗讀在裝置上完成，不會上傳。字卡粵語可以播放包在 App 裡的預錄聲音檔（工作室合成，不是現場人聲）。普通話和英語使用 iPhone 自己的語音（AVSpeechSynthesizer）。沒有預錄檔的樂園句子也用裝置語音。</p>
+
+      <h3>購買</h3>
+      <p>付款由 Apple 處理。我們收不到信用卡號碼、帳單地址或其他付款資料。</p>
+      <p>現正發售的是自動續訂：一年 <code>app.yuebun.sikzi.pro.yearly</code>，一個月 <code>app.yuebun.sikzi.pro.monthly</code>。沒有試用。訂閱會一直續期，直到你在 Apple 取消。舊的終身產品 <code>app.yuebun.sikzi.pro.lifetime</code> 已不再發售；如果 Apple 仍然承認舊收據，該收據仍然可以開啟 Pro。</p>
+      <p>向 App Store 詢問價錢、完成購買、還原購買，或打開訂閱管理時，裝置會跟 Apple 通訊。那是 Apple 的服務。價錢問不到時，畫面留空。</p>
+
+      <h3>家長閘</h3>
+      <p>以下動作之前，App 會先出一條加法，要家長算出兩個一位數的和。這個和至少是 10，所以只輸入一個數字不會通過。答對後要按 OK。</p>
+      <ul>
+        <li>從主頁齒輪進入家長設定（這次答案在大約 90 秒內，可以給平常的畫面切換再用）</li>
+        <li>打開付費頁、購買、還原購買、管理訂閱</li>
+        <li>打開 App 內的條款與私隱頁</li>
+        <li>刪除本機進度</li>
+      </ul>
+      <p>購買、還原、付費頁、管理訂閱、條款、私隱和刪除進度，每一次都會再問，不會沿用那 90 秒。</p>
+
+      <h3>兒童私隱</h3>
+      <p>美國《兒童線上私隱保護法》（COPPA）：我們不向兒童收集個人資料。沒有兒童帳號，沒有廣告，沒有行為廣告，也沒有第三方追蹤。購買由家長經 Apple 完成。</p>
+      <p>配合 Apple 兒童類別的做法：購買和家長功能在家長閘後面，沒有第三方廣告或分析，這個版本沒有從 App 連出網站。這份政策並不表示 Apple 已經把 App 核定為兒童類別。</p>
+      <p>香港《個人資料（私隱）條例》（第 486 章）：App 不把個人資料傳給我們，所以我們並不持有從 App 收集到的兒童個人資料。如果你用下面的 GitHub Issues 聯絡我們，那則訊息是你自己選擇送出的資料，由 GitHub 按其條款保存。請盡量不要在議題裡寫兒童的全名或其他個人資料。</p>
+
+      <h3>怎樣刪除資料</h3>
+      <ol>
+        <li>在 App 裡：主頁齒輪、通過家長閘、打開家長設定，再按「刪除本機進度」。App 會再問一次家長閘，然後清除上面兩組本機資料，並回到歡迎畫面。</li>
+        <li>刪除 App：從 iPhone 刪除 Star Cards，本機資料會隨 App 一起刪除。</li>
+      </ol>
+      <p>刪除進度或刪除 App 都不會取消 Apple 訂閱。清除本機進度之後，App 會再向 Apple 查詢這部裝置的購買資格。同一個 Apple ID 如果仍然擁有訂閱，Pro 可以再次顯示為已開啟。要停止付費，請在 Apple 的訂閱項目裡取消。做法寫在<a href="support.html#zh-Hant">支援頁</a>。</p>
+
+      <h3>聯絡</h3>
+      <p>請到這個網站的 <a href="https://github.com/sisiyeung1126-max/star-cards-support/issues">GitHub Issues</a> 開一則議題。</p>
+      <p class="placeholder">支援電郵：SUPPORT_EMAIL。擁有人尚未填上這一行。這裡沒有公開任何個人電郵，請不要把 SUPPORT_EMAIL 當成可以收信的地址。</p>
+    </article>
+
+    <article id="zh-Hans" lang="zh-Hans">
+      <h2>简体中文</h2>
+      <p>Star Cards（繁星字卡）是给孩子使用的亲子认字 App，对象大约 2.5 至 6 岁。App 里家长可选的年龄是 3–4 岁、4–5 岁或 5–6 岁。没有儿童账号。套装标识是 <code>app.yuebun.sikzi</code>。</p>
+      <p>这份政策只描述这个版本的程序实际做的事。我们不从这款 App 收集个人资料。</p>
+
+      <h3>我们收集什么</h3>
+      <p>进度、设定和语音都不会传到我们这里。我们没有账号系统，也没有自己的 App 服务器或付款服务器。</p>
+      <p>随 App 附上的隐私清单（PrivacyInfo.xcprivacy）写明：不追踪、追踪域名是空的、收集的数据类型是空的。唯一申报的必要原因 API 是 UserDefaults（原因 CA92.1），用来把 App 自己的设定存在这部装置。</p>
+      <p>程序里没有广告 SDK、没有第三方分析或崩溃报告、没有广告标识符（IDFA），也不会要求追踪许可。这个版本不会从 App 里打开网站。</p>
+
+      <h3>只存在这部装置的数据</h3>
+      <p>数据只写入这部 iPhone 的 UserDefaults。App 不会把进度写成要上传的文件。程序只会读取已经包在 App 里的图片和声音，用来显示和播放。</p>
+      <p>设定与学习进度（键名 <code>yuebun-sikzi-state-v2</code>）包括：是否完成第一次设定、年龄段、画面文字（繁体、简体或英文）、朗读语音、每次大约玩几张、是否只看图不朗读、看过哪些字、未完成的一局、今日星星和重玩记录、ABC 与数字进度、家长选择的意向和所在地区，以及这部装置上 Pro 是否已开的本地标记。购买是否仍然有效，以这部装置上的 Apple StoreKit 为准，不以那个本地标记为准。</p>
+      <p>乐园进度（键名 <code>yuebun.playland.progress</code>）包括：贴纸数目、音乐开关，以及已收集的贴纸卡。</p>
+      <p>App 不会询问孩子的姓名、电邮或电话。Info.plist 没有相机、麦克风、照片或定位的用途说明，因为 App 不使用这些功能。声音只用于播放（音频会话是 playback），不是录音。</p>
+
+      <h3>语音</h3>
+      <p>朗读在装置上完成，不会上传。字卡粤语可以播放包在 App 里的预录声音文件（工作室合成，不是现场人声）。普通话和英语使用 iPhone 自己的语音（AVSpeechSynthesizer）。没有预录文件的乐园句子也用装置语音。</p>
+
+      <h3>购买</h3>
+      <p>付款由 Apple 处理。我们收不到信用卡号码、账单地址或其他付款资料。</p>
+      <p>现在发售的是自动续订：一年 <code>app.yuebun.sikzi.pro.yearly</code>，一个月 <code>app.yuebun.sikzi.pro.monthly</code>。没有试用。订阅会一直续期，直到你在 Apple 取消。旧的终身产品 <code>app.yuebun.sikzi.pro.lifetime</code> 已不再发售；如果 Apple 仍然承认旧收据，该收据仍然可以开启 Pro。</p>
+      <p>向 App Store 询问价钱、完成购买、恢复购买，或打开订阅管理时，装置会跟 Apple 通信。那是 Apple 的服务。价钱问不到时，画面留空。</p>
+
+      <h3>家长闸</h3>
+      <p>以下动作之前，App 会先出一道加法，要家长算出两个一位数的和。这个和至少是 10，所以只输入一个数字不会通过。答对后要按 OK。</p>
+      <ul>
+        <li>从主页齿轮进入家长设定（这次答案在大约 90 秒内，可以给平常的画面切换再用）</li>
+        <li>打开付费页、购买、恢复购买、管理订阅</li>
+        <li>打开 App 内的条款与隐私页</li>
+        <li>删除本机进度</li>
+      </ul>
+      <p>购买、恢复、付费页、管理订阅、条款、隐私和删除进度，每一次都会再问，不会沿用那 90 秒。</p>
+
+      <h3>儿童隐私</h3>
+      <p>美国《儿童在线隐私保护法》（COPPA）：我们不向儿童收集个人资料。没有儿童账号，没有广告，没有行为广告，也没有第三方追踪。购买由家长经 Apple 完成。</p>
+      <p>配合 Apple 儿童类别的做法：购买和家长功能在家长闸后面，没有第三方广告或分析，这个版本没有从 App 连出网站。这份政策并不表示 Apple 已经把 App 核定为儿童类别。</p>
+      <p>香港《个人资料（私隐）条例》（第 486 章）：App 不把个人资料传给我们，所以我们并不持有从 App 收集到的儿童个人资料。如果你用下面的 GitHub Issues 联络我们，那则消息是你自己选择送出的资料，由 GitHub 按其条款保存。请尽量不要在议题里写儿童的全名或其他个人资料。</p>
+
+      <h3>怎样删除数据</h3>
+      <ol>
+        <li>在 App 里：主页齿轮、通过家长闸、打开家长设定，再按「删除本机进度」。App 会再问一次家长闸，然后清除上面两组本机数据，并回到欢迎画面。</li>
+        <li>删除 App：从 iPhone 删除 Star Cards，本机数据会随 App 一起删除。</li>
+      </ol>
+      <p>删除进度或删除 App 都不会取消 Apple 订阅。清除本机进度之后，App 会再向 Apple 查询这部装置的购买资格。同一个 Apple ID 如果仍然拥有订阅，Pro 可以再次显示为已开启。要停止付费，请在 Apple 的订阅项目里取消。做法写在<a href="support.html#zh-Hans">支持页</a>。</p>
+
+      <h3>联络</h3>
+      <p>请到这个网站的 <a href="https://github.com/sisiyeung1126-max/star-cards-support/issues">GitHub Issues</a> 开一则议题。</p>
+      <p class="placeholder">支持电邮：SUPPORT_EMAIL。拥有人尚未填上这一行。这里没有公开任何个人电邮，请不要把 SUPPORT_EMAIL 当成可以收信的地址。</p>
+    </article>
+
+    <article id="en" lang="en">
+      <h2>English</h2>
+      <p>Star Cards is a parent-and-child word-card app for young children, about 2.5 to 6 years old. Inside the app, a parent chooses an age band of 3–4, 4–5, or 5–6. There is no child account. The bundle identifier is <code>app.yuebun.sikzi</code>.</p>
+      <p>This policy describes only what this version of the app actually does. We do not collect personal data from the app.</p>
+
+      <h3>What we collect</h3>
+      <p>Progress, settings, and speech are not sent to us. We do not run accounts, an app server, or a payment server.</p>
+      <p>The privacy manifest shipped in the app (PrivacyInfo.xcprivacy) says tracking is off, the tracking-domain list is empty, and the collected-data list is empty. The only declared required-reason API is UserDefaults (reason CA92.1), used to keep the app’s own settings on the device.</p>
+      <p>The code has no advertising SDK, no third-party analytics or crash reporting, and no advertising identifier (IDFA). It does not ask for tracking permission. This version does not open websites from inside the app.</p>
+
+      <h3>What stays on the device</h3>
+      <p>Data is written only to UserDefaults on that iPhone. The app does not save progress as a file to upload. It only reads pictures and sounds that are already inside the app, so it can show and play them.</p>
+      <p>Settings and learning progress (key <code>yuebun-sikzi-state-v2</code>) include: whether first-run setup is done, the age band, the on-screen script (Traditional Chinese, Simplified Chinese, or English), the speaking voice, about how many cards in a session, whether pictures play without speech, which cards have been seen, an unfinished round, today’s stars and replay record, ABC and number progress, the parent’s intent and home-region choices, and a local flag that Pro is on for this device. Whether a purchase is still valid comes from Apple StoreKit on the device, not from that local flag.</p>
+      <p>Playland progress (key <code>yuebun.playland.progress</code>) includes the sticker count, the music switch, and which sticker cards have been collected.</p>
+      <p>The app does not ask for a child’s name, email, or phone number. Info.plist has no camera, microphone, photo, or location purpose strings, because the app does not use those. Sound is playback only. The audio session is playback, not recording.</p>
+
+      <h3>Speech</h3>
+      <p>Speech stays on the device and is not uploaded. Cantonese on the word cards can play a sound file shipped inside the app (a studio pre-record, not a live person). Putonghua and English use the iPhone’s own voice (AVSpeechSynthesizer). A Playland line without a bundled recording also uses the device voice.</p>
+
+      <h3>Purchases</h3>
+      <p>Apple processes the payment. We do not receive card numbers, billing addresses, or other payment details.</p>
+      <p>What is for sale now is an auto-renewing subscription: yearly <code>app.yuebun.sikzi.pro.yearly</code>, and monthly <code>app.yuebun.sikzi.pro.monthly</code>. There is no trial. The subscription keeps renewing until you cancel it with Apple. The older lifetime product <code>app.yuebun.sikzi.pro.lifetime</code> is no longer for sale. If Apple still honours an old receipt, that receipt can still turn Pro on.</p>
+      <p>When the app asks the App Store for a price, completes a purchase, restores a purchase, or opens subscription management, the device talks to Apple. That is Apple’s service. If the price does not come back, the page stays blank.</p>
+
+      <h3>Parent gate</h3>
+      <p>Before the actions below, the app shows an addition sum. A parent adds two single digits. The sum is at least 10, so one digit is never enough. After a correct answer, tap OK.</p>
+      <ul>
+        <li>Opening Parent settings from the gear on the home screen. That answer can be reused for ordinary screen changes for about 90 seconds.</li>
+        <li>Opening the paywall, buying, restoring purchases, or managing the subscription.</li>
+        <li>Opening the in-app terms and privacy page.</li>
+        <li>Deleting progress on this device.</li>
+      </ul>
+      <p>Purchase, restore, the paywall, manage subscription, terms, privacy, and delete progress each ask again. They do not reuse the 90 seconds.</p>
+
+      <h3>Children’s privacy</h3>
+      <p>COPPA (United States): we do not collect personal information from children. There is no child account, no advertising, no behavioural advertising, and no third-party tracking. A parent makes a purchase through Apple.</p>
+      <p>Practices aimed at Apple’s Kids category: purchases and parent controls sit behind the parent gate, there are no third-party ads or analytics, and this version does not link out to websites. This policy does not mean Apple has already approved the app in the Kids category.</p>
+      <p>Hong Kong Personal Data (Privacy) Ordinance (Cap. 486): the app does not send personal data to us, so we do not hold a child’s personal data collected from the app. If you contact us through the GitHub Issues link below, that message is data you choose to send, and GitHub keeps it under GitHub’s terms. Please do not put a child’s full name, or other personal details, in an issue if you can avoid it.</p>
+
+      <h3>How to delete data</h3>
+      <ol>
+        <li>In the app: the gear on the home screen, pass the parent gate, open Parent settings, then tap “Delete progress on this device”. The app asks the parent gate again, clears both local stores above, and returns to the welcome screen.</li>
+        <li>Delete the app: removing Star Cards from the iPhone removes the local data with it.</li>
+      </ol>
+      <p>Deleting progress, or deleting the app, does not cancel an Apple subscription. After local progress is cleared, the app asks Apple again whether this device still has a purchase. If the same Apple ID still owns the subscription, Pro can show as on again. To stop paying, cancel in Apple’s subscription list. The steps are on the <a href="support.html#en">support page</a>.</p>
+
+      <h3>Contact</h3>
+      <p>Open an issue on this site’s <a href="https://github.com/sisiyeung1126-max/star-cards-support/issues">GitHub Issues</a>.</p>
+      <p class="placeholder">Support email: SUPPORT_EMAIL. The owner has not filled this in. No personal email is published here. Do not treat SUPPORT_EMAIL as a working address.</p>
+    </article>
+
+    <footer>
+      <p>Effective 2026-09-24. <a href="support.html">Support</a></p>
+    </footer>
+  </div>
+</body>
+</html>
