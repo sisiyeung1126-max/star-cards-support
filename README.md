@@ -8,4 +8,4 @@ The pages do not set cookies, and they do not load third-party fonts, scripts, o
 - [Privacy policy](privacy.html)
 - [Support](support.html)
 
-Replace the `SUPPORT_EMAIL` line on the privacy and support pages with a real address before relying on email. No personal email is published in this repository.
+Support email: [sisiyeung1126@icloud.com](mailto:sisiyeung1126@icloud.com). GitHub Issues is the other contact option.
