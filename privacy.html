@@ -35,7 +35,8 @@
       <p>資料只寫入這部 iPhone 的 UserDefaults。App 不會把進度寫成要上傳的檔案。程式只會讀取已經包在 App 裡的圖片和聲音，用來顯示和播放。</p>
       <p>設定與學習進度（鍵名 <code>yuebun-sikzi-state-v2</code>）包括：是否完成第一次設定、年齡段、畫面文字（繁體、簡體或英文）、朗讀語音、每次大約玩幾張、是否只看圖不朗讀、看過哪些字、未完成的一局、今日星星和重玩紀錄、ABC 與數字進度、家長選擇的意向和所在地區，以及這部裝置上 Pro 是否已開的本地標記。購買是否仍然有效，以這部裝置上的 Apple StoreKit 為準，不是以那個本地標記為準。</p>
       <p>樂園進度（鍵名 <code>yuebun.playland.progress</code>）包括：貼紙數目、音樂開關，以及已收集的貼紙卡。</p>
-      <p>App 不會詢問兒童的姓名、電郵或電話。Info.plist 沒有相機、麥克風、相片或定位的用途說明，因為 App 不使用這些功能。聲音只用於播放（音訊工作階段是 playback），不是錄音。</p>
+      <p>App 不會詢問兒童的姓名、電郵或電話。Info.plist 沒有相機或定位的用途說明。App 不用相機或定位。麥克風只在家長開啟「講個字叫醒乘客」之後使用；聲音留在這部裝置，不會上傳。</p>
+      <p>家人相片只存喺呢部機，唔會上傳。</p>
 
       <h3>語音</h3>
       <p>朗讀在裝置上完成，不會上傳。字卡粵語可以播放包在 App 裡的預錄聲音檔（工作室合成，不是現場人聲）。普通話和英語使用 iPhone 自己的語音（AVSpeechSynthesizer）。沒有預錄檔的樂園句子也用裝置語音。</p>
@@ -86,7 +87,8 @@
       <p>数据只写入这部 iPhone 的 UserDefaults。App 不会把进度写成要上传的文件。程序只会读取已经包在 App 里的图片和声音，用来显示和播放。</p>
       <p>设定与学习进度（键名 <code>yuebun-sikzi-state-v2</code>）包括：是否完成第一次设定、年龄段、画面文字（繁体、简体或英文）、朗读语音、每次大约玩几张、是否只看图不朗读、看过哪些字、未完成的一局、今日星星和重玩记录、ABC 与数字进度、家长选择的意向和所在地区，以及这部装置上 Pro 是否已开的本地标记。购买是否仍然有效，以这部装置上的 Apple StoreKit 为准，不以那个本地标记为准。</p>
       <p>乐园进度（键名 <code>yuebun.playland.progress</code>）包括：贴纸数目、音乐开关，以及已收集的贴纸卡。</p>
-      <p>App 不会询问孩子的姓名、电邮或电话。Info.plist 没有相机、麦克风、照片或定位的用途说明，因为 App 不使用这些功能。声音只用于播放（音频会话是 playback），不是录音。</p>
+      <p>App 不会询问孩子的姓名、电邮或电话。Info.plist 没有相机或定位的用途说明。App 不用相机或定位。麦克风只在家长打开「说个字叫醒乘客」之后使用；声音留在这台设备上，不会上传。</p>
+      <p>家人相片只保存在这台设备上，不会上传。</p>
 
       <h3>语音</h3>
       <p>朗读在装置上完成，不会上传。字卡粤语可以播放包在 App 里的预录声音文件（工作室合成，不是现场人声）。普通话和英语使用 iPhone 自己的语音（AVSpeechSynthesizer）。没有预录文件的乐园句子也用装置语音。</p>
@@ -137,7 +139,8 @@
       <p>Data is written only to UserDefaults on that iPhone. The app does not save progress as a file to upload. It only reads pictures and sounds that are already inside the app, so it can show and play them.</p>
       <p>Settings and learning progress (key <code>yuebun-sikzi-state-v2</code>) include: whether first-run setup is done, the age band, the on-screen script (Traditional Chinese, Simplified Chinese, or English), the speaking voice, about how many cards in a session, whether pictures play without speech, which cards have been seen, an unfinished round, today’s stars and replay record, ABC and number progress, the parent’s intent and home-region choices, and a local flag that Pro is on for this device. Whether a purchase is still valid comes from Apple StoreKit on the device, not from that local flag.</p>
       <p>Playland progress (key <code>yuebun.playland.progress</code>) includes the sticker count, the music switch, and which sticker cards have been collected.</p>
-      <p>The app does not ask for a child’s name, email, or phone number. Info.plist has no camera, microphone, photo, or location purpose strings, because the app does not use those. Sound is playback only. The audio session is playback, not recording.</p>
+      <p>The app does not ask for a child’s name, email, or phone number. Info.plist has no camera or location purpose strings. The app does not use the camera or location. The microphone is used only after a parent turns speak-to-wake on. Audio stays on the device and nothing is uploaded.</p>
+      <p>Family photos stay on this device and are not uploaded.</p>
 
       <h3>Speech</h3>
       <p>Speech stays on the device and is not uploaded. Cantonese on the word cards can play a sound file shipped inside the app (a studio pre-record, not a live person). Putonghua and English use the iPhone’s own voice (AVSpeechSynthesizer). A Playland line without a bundled recording also uses the device voice.</p>
