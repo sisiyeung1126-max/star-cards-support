@@ -1,6 +1,8 @@
-# Star Cards support
+# Tiny Tram support
 
-Static privacy and support pages for the Star Cards iOS app (`app.yuebun.sikzi`).
+Static privacy and support pages for the Tiny Tram iOS app (叮叮小電車 / 叮叮小电车), bundle id `app.yuebun.sikzi`.
+
+The app was previously referred to as Star Cards (繁星字卡). These pages stay at the `star-cards-support` GitHub Pages path so the existing privacy URL keeps working.
 
 The pages do not set cookies, and they do not load third-party fonts, scripts, or analytics.
 
